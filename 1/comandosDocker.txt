@@ -1,0 +1,9 @@
+docker build -t renatospaka/maratona-fullcycle4-1 .
+
+docker run -d -p 8080:8080 --name fullcycle4-desafio1  renatospaka/maratona-fullcycle4-1:latest
+
+# push image to docker hub
+docker image push renatospaka/maratona-fullcycle4-1:latest
+
+# docker compose
+docker-compose up
